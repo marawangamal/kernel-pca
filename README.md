@@ -5,11 +5,7 @@ Python implementation of Kernel PCA
 ## Example Outputs
 
 <p align="center">
-  <img src="images/concentric_data.png" alt="kernel pca" class="center" width="40%">
-</p>
-
-<p align="center">
-  <img src="images/pca_kpca_concentric.png" alt="kernel pca" class="center" width="40%">
+  <img src="images/mnist.png" alt="mnist pca" class="center" width="100%">
 </p>
 
 ## Usage
@@ -34,9 +30,3 @@ a_reduced = kPCA.inference(a)
 # Step 3. Use reduced vector a_reduced, to obtain a reconstruction a_hat in the original space. This step uses 
 # Fixed Point Iteration to solve a non-convex optimization problem, so an initial guess is needed.
 a_hat = kPCA.reconstruct(a0, a_reduced) 
-
-
-
-
-
-
