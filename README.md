@@ -1,6 +1,6 @@
 # Kernel Principal Component Analysis
 
-Python implementation of Kernel PCA dimensionality reduction technique. Additionally, a reconstruct method is provided that solves the pre-image problem by solving a non-convex least squares optimization problem using fixed point iteration.
+Python implementation of Kernel PCA dimensionality reduction technique. Additionally, a reconstruct method is provided that solves the pre-image problem by solving a non-convex optimization problem using fixed point iteration.
 
 ## Example Outputs
 
