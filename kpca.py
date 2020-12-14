@@ -69,7 +69,7 @@ class KernelPCA(object):
         return k_tilde_xy
 
     def inferece(self, x):
-        """ Obtains coefficients of new basis that phi_tilde(x) is projected onto.
+        """ Obtains coefficients of new basis that phi_tilde(x) is projected onto
         Args:
             x: (vector) [d, 1] pre-image.
         Returns:
@@ -81,14 +81,14 @@ class KernelPCA(object):
 
         return self.beta
 
-    def reconstruct(self, z0, K_max=2, iters=10, print_iters=False):
+    def reconstruct(self, z0, a, K_max=2, iters=10, print_iters=False):
         """ Uses fixed point iteration to solve:  z_hat = min_z || phi_projected(x) - phi(z)||
         Args:
-          z0: (vector) [dx1] initial point, where d is dimension in original space.
-          K_max: (scaler) number of PCs to use.
-          iter: (scaler) maximum number of iterations to perform FPI.
+            z0: (vector) [dx1] initial point, where d is dimension in original space.
+            K_max: (scaler) number of PCs to use.
+            iter: (scaler) maximum number of iterations to perform FPI.
         Returns:
-          z: (vector) [dx1] optimal reconstruction found after t steps.
+            z: (vector) [dx1] optimal reconstruction found after t steps.
         """
         _, self.inferece(z0)
         z = z0
