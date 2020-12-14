@@ -1,12 +1,20 @@
 # Kernel Principal Component Analysis
 
-Python implementation of Kernel PCA
+Python implementation of Kernel PCA dimensionality reduction technique. Additionally, a reconstruct method is provided that solves the pre-image problem by solving a non-convex least squares optimization problem using fixed point iteration.
 
 ## Example Outputs
 
+### Reconstruction of images in MNIST dataset after using KPCA to reduce dimensionality.
 <p align="center">
-  <img src="images/mnist.png" alt="mnist pca" class="center" width="100%">
+  <img src="images/mnist.png" alt="mnist pca" class="center" width="80%">
 </p>
+
+### Illustration of toy data becoming linearly separable after using KPCA to reduce its dimensionality.
+<p align="center">
+  <img src="images/concentric_data.png" alt="kernel pca" class="center" width="40%">
+  <img src="images/pca_kpca_concentric.png" alt="kernel pca" class="center" width="40%">
+</p>
+
 
 ## Usage
 
